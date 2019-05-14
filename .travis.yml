@@ -22,4 +22,5 @@ intall:
 script:
   - whereis google-chrome-stable
   - whereis chromedriver
-  - python -m pytest-selenium tests/
+#  - python -m pytest-selenium tests/
+  - behave
