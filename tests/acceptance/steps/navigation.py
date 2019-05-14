@@ -9,5 +9,6 @@ use_step_matcher('re') #Nos permite recibir parametros de los Escenarios del arc
 @given('I am on the homepage')
 def step_impl(contex):
     #browser = webdriver.Chrome() Normal
-    browser = webdriver.Chrome("/usr/local/bin/chromedriver", chrome_options=chrome_options)
+    #browser = webdriver.Chrome("/usr/local/bin/chromedriver", chrome_options=chrome_options)
+    browser = webdriver.Chrome(chrome_options=chrome_options)
     browser.get('https://www.google.com/')
