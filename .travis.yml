@@ -13,7 +13,7 @@ before_install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
   - sudo chmod +x /usr/local/share/chromedriver
   - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 
-intall:
+install:
   - "pip install pytest"
   - "pip install pytest-selenium"
   - "pip install -r requirements.txt"
@@ -22,5 +22,4 @@ intall:
 script:
   - whereis google-chrome-stable
   - whereis chromedriver
-#  - python -m pytest-selenium tests/
   - behave tests/acceptance/

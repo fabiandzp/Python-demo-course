@@ -12,3 +12,4 @@ def step_impl(contex):
     #browser = webdriver.Chrome("/usr/local/bin/chromedriver", chrome_options=chrome_options)
     browser = webdriver.Chrome(chrome_options=chrome_options)
     browser.get('https://www.google.com/')
+
