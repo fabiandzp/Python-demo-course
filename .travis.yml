@@ -19,8 +19,10 @@ install:
   - "pip install -r requirements.txt"
 
 
+before_script:
+  - python app.py
+
 script:
   - whereis google-chrome-stable
   - whereis chromedriver
-  - python app.py
   - behave tests/acceptance/
