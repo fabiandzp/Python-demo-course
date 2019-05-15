@@ -11,12 +11,10 @@ def step_impl(contex):
     #browser = webdriver.Chrome() Normal
     #browser = webdriver.Chrome("/usr/local/bin/chromedriver", chrome_options=chrome_options)
     browser = webdriver.Chrome(chrome_options=chrome_options)
-    browser.get('http://127.0.0.1:5000')
+    browser.get('https://swapi.co/')
 
 
-@when('I click on the link with id "(.*)"')
-def step_impl(context, link_id):
+@when('I click on the link documetation')
+def step_impl(context):
     browser = webdriver.Chrome(chrome_options=chrome_options)
-    browser.get('http://127.0.0.1:5000')
-    link = browser.find_element_by_id(link_id)
-    link.click()
+    browser.get('https://swapi.co/documentation')
