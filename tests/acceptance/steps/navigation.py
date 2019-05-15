@@ -11,5 +11,12 @@ def step_impl(contex):
     #browser = webdriver.Chrome() Normal
     #browser = webdriver.Chrome("/usr/local/bin/chromedriver", chrome_options=chrome_options)
     browser = webdriver.Chrome(chrome_options=chrome_options)
-    browser.get('https://www.google.com/')
+    browser.get('http://127.0.0.1:5000')
 
+
+@when('I click on the link with id "(.*)"')
+def step_impl(context, link_id):
+    browser = webdriver.Chrome(chrome_options=chrome_options)
+    browser.get('http://127.0.0.1:5000')
+    link = browser.find_element_by_id(link_id)
+    link.click()

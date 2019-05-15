@@ -22,4 +22,5 @@ install:
 script:
   - whereis google-chrome-stable
   - whereis chromedriver
+  - python app.py
   - behave tests/acceptance/
